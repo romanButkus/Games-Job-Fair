@@ -6,12 +6,14 @@ using UnityEngine.UI;
 
 public class PlayerMove : MonoBehaviour
 {
-    [SerializeField] private float _speed = 10f;
+    [SerializeField] public float _speed = 10f;
+    [SerializeField] private Animator animator;
+
+    
 
     private void FixedUpdate()
     {
         AutoRun();
-        
     }
 
     private void AutoRun()
