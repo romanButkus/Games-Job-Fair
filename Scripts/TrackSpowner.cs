@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class TrackSpowner : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private List<GameObject> _tracks;
 
-    // Update is called once per frame
-    void Update()
+    private int _newPosition = 90;
+
+    public List<GameObject> Grounds
     {
-        
+        get => _tracks;
+        set => _tracks = value;
     }
 }
